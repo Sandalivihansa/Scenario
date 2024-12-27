@@ -17,6 +17,8 @@ class Config:
     # Only one # don't remove other one.
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "CoderX")
 
+    ALLOW_CHATS = bool(os.environ.get("ALLOW_CHATS", True))  # Default value is True if not set in environment
+    
     # Can add multiple with spaces
     DRAGONS = {int(x) for x in os.environ.get("DRAGONS", "").split()}
 
