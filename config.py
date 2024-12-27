@@ -81,11 +81,11 @@ OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "")  # From:- https://op
 GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)  # From:- http://genius.com/api-clients
 MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://Cluster006:600510@cluster006.ootpa.mongodb.net/Cluster006?retryWrites=true&w=majority")
 REDIS_URL = os.environ.get("REDIS_URL", "redis://Madharjoot:GuKhao123_@redis-12276.c275.us-east-1-4.ec2.cloud.redislabs.com:12276/Madharjoot")
-BOT_ID = int(os.environ.get("BOT_ID", "None"))  # Telegram Bot ID (EXP:- 1241223850)
+BOT_ID = int(os.environ.get("BOT_ID", "7332398186"))  # Telegram Bot ID (EXP:- 1241223850)
 SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)  # Support Chat Group Link
 SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)  # Use @SpamWatchSupport
 SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)  # From https://t.me/SpamWatchBot 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "")  # Bot Username
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@testingplate45_bot")  # Bot Username
 
 STRING_SESSION = os.environ.get("STRING_SESSION", None)  # Telethon Based String Session
 REPO = "TeamScenario/Scenario"
