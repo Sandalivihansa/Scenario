@@ -11,13 +11,13 @@ Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1002325247996")
 
 
 # Token from botfather 
-TOKEN = os.environ.get("TOKEN", "7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0")
+TOKEN = os.environ.get("7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0", "7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0")
 
 # Make a new group then add @ScenarioXbot then send /id and fill id here.
-JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1002325247996")
+JOIN_LOGGER = os.environ.get("-1002325247996", "-1002325247996")
 
 # only one # don't remove other one.
-OWNER_ID = int(os.environ.get("OWNER_ID", "1451534504", "fill_your_id_here_")) 
+OWNER_ID = int(os.environ.get("1451534504", "1451534504", "fill_your_id_here_")) 
 
 # only one # don't remove other one.
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "CoderX", "Your_username_here")
@@ -57,10 +57,10 @@ PORT = int(os.environ.get("PORT", 8443))
 CERT_PATH = os.environ.get("CERT_PATH")
 
 # Bot Owner's API_ID (From:- https://my.telegram.org/apps)
-API_ID = os.environ.get("API_ID", "5047271")
+API_ID = os.environ.get("5047271", "5047271")
 
 # Bot Owner's API_HASH (From:- https://my.telegram.org/apps)
-API_HASH = os.environ.get("API_HASH", "047d9ed308172e637d4265e1d9ef0c27")
+API_HASH = os.environ.get("047d9ed308172e637d4265e1d9ef0c27", "047d9ed308172e637d4265e1d9ef0c27")
 
 # Any SQL Database Link (RECOMMENDED:- PostgreSQL & https://www.elephantsql.com)
 DB_URL = os.environ.get("DATABASE_URL", "") 
