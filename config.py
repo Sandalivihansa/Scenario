@@ -2,7 +2,7 @@ import os
 
 """
 Things to be noted you can fill values between empty "" 
-Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-100828822882")
+Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1002325247996")
 
 • If value is none there add "" to fill if you don't wanna fill add None
 
@@ -11,13 +11,13 @@ Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-100828822882")
 
 
 # Token from botfather 
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("TOKEN", "7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0")
 
 # Make a new group then add @ScenarioXbot then send /id and fill id here.
-JOIN_LOGGER = os.environ.get("EVENT_LOGS", "")
+JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1002325247996")
 
 # only one # don't remove other one.
-OWNER_ID = int(os.environ.get("OWNER_ID", "2142595466", "fill_your_id_here_")) 
+OWNER_ID = int(os.environ.get("OWNER_ID", "1451534504", "fill_your_id_here_")) 
 
 # only one # don't remove other one.
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "CoderX", "Your_username_here")
@@ -57,10 +57,10 @@ PORT = int(os.environ.get("PORT", 8443))
 CERT_PATH = os.environ.get("CERT_PATH")
 
 # Bot Owner's API_ID (From:- https://my.telegram.org/apps)
-API_ID = os.environ.get("API_ID", "")
+API_ID = os.environ.get("API_ID", "5047271")
 
 # Bot Owner's API_HASH (From:- https://my.telegram.org/apps)
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "047d9ed308172e637d4265e1d9ef0c27")
 
 # Any SQL Database Link (RECOMMENDED:- PostgreSQL & https://www.elephantsql.com)
 DB_URL = os.environ.get("DATABASE_URL", "") 
@@ -77,7 +77,7 @@ DONATION_LINK = os.environ.get("https://t.me/i_14344")
 WALL_API = os.environ.get("WALL_API", None) 
 
 To remove background of images # From:- https://www.remove.bg/
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "")
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "qV26c84dUAhUuEb3sG9N9M9Q")
 
 ## More info written at right side from this line.
 
