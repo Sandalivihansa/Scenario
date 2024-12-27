@@ -8,6 +8,7 @@ import aiohttp
 import telegram.ext as tg
 import psycopg2
 
+from config import Config
 from pyrogram import Client, errors
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 from telethon import TelegramClient
