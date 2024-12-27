@@ -93,7 +93,7 @@ class Config:
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "@testingplate45_bot")
 
     # String Session (Telethon)
-    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOKEBu68-K6TTQw56_EyVyzRZaJSrJBbYql6gndMJu1N1_BVKT2wqWEKxfc2AtcZaBxrG-igpDBM3u7NPeC0arq5aZ7EiX_OdIV1rBz9f5O-6bDsriAy_0-X3v7jtMJPseNksTPeLxcwr5NamjsGpdc63R9qsfoWsXbxFoH0JgymSItF_GSLwnTgpeUxl7ifj7JMUGSp-6I57YfVBfn6n7njarJB0lynjPS6FRX1S_Quk-MTdKKMqL0nMsIK5rjEuaYcicovsfHumJhWXfbQSX9SqeTQ7GGAbG7GsZpxW4c0ETZSXW5Glye-hxy0KhhZ8XX5ETPnSnnxzA-LPM-jTaNKt_Ww=)
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
     # Repo and Developer Information
     REPO = "TeamScenario/Scenario"
