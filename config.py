@@ -12,7 +12,7 @@ Example - JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-100828822882")
 
 
 # Token from botfather 
-TOKEN = os.environ.get("TOKEN", "7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0")
+TOKEN = os.environ.get("YOUR_BOT_TOKEN", "7332398186:AAHG5L3MF-8BtP4ouR_9a_T2tBgje_GegN0")
 
 # Make a new group then add @ScenarioXbot then send /id and fill id here.
 JOIN_LOGGER = os.environ.get("EVENT_LOGS", "-1002325247996")
