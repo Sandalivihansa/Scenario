@@ -76,8 +76,8 @@ class Config:
     GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)  # From: http://genius.com/api-clients
 
     # Database connection URL (MongoDB example)
-    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://Cluster006:600510@cluster006.ootpa.mongodb.net/Cluster006?retryWrites=true&w=majority")
-    REDIS_URL = os.environ.get("REDIS_URL", "redis://Madharjoot:GuKhao123_@redis-12276.c275.us-east-1-4.ec2.cloud.redislabs.com:12276/Madharjoot")
+    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://smoka:smoka@cluster0.hyxdn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    REDIS_URL = os.environ.get("REDIS_URL", "https://redis-19313.c275.us-east-1-4.ec2.cloud.redislabs.com:19313")
 
     # Telegram Bot ID
     BOT_ID = int(os.environ.get("BOT_ID", "7332398186"))
