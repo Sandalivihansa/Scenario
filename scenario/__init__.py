@@ -5,7 +5,6 @@ import time
 import spamwatch
 import httpx
 import aiohttp
-import telegram.ext as tg
 import psycopg2
 
 from config import Config
@@ -21,7 +20,8 @@ from redis import StrictRedis
 from Python_ARQ import ARQ
 from aiohttp import ClientSession
 from telegraph import Telegraph
-from telegram import Chat
+from telegram import Chat, Update
+from telegram.ext import Application, CommandHandler, CallbackContext
 
 StartTime = time.time()
 
@@ -44,19 +44,16 @@ ENV = bool(os.environ.get("ENV", False))
 if ENV:
     # Load environment variables
     TOKEN = os.environ.get("TOKEN")
-    OWNER_ID = int(os.environ.get("OWNER_ID", "2142595466"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1451534504"))
     API_ID = os.environ.get("API_ID")
     API_HASH = os.environ.get("API_HASH")
     DB_URL = os.environ.get("DATABASE_URL")
     MONGO_DB_URL = os.environ.get("MONGO_DB_URL")
     REDIS_URL = os.environ.get("REDIS_URL")
     STRING_SESSION = os.environ.get("STRING_SESSION")
-    # Add other environment variables as needed
 else:
     try:
-        # Attempt to import config if not using environment variables
         from config import Config
-
         TOKEN = Config.TOKEN
         OWNER_ID = int(Config.OWNER_ID)
         API_ID = Config.API_ID
@@ -88,12 +85,9 @@ except Exception as e:
     sys.exit(1)
 
 telegraph = Telegraph()
-telegraph.create_account(short_name='Scenario')
+telegraph.create_account(short_name='ScenarioBot')
 
 # Pyrogram and Telethon setup
-updater = tg.Updater(token=TOKEN, workers=8, use_context=True)
-dispatcher = updater.dispatcher
-pgram = Client("ScenarioBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 telethn = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 
 # Logging initialization
@@ -124,6 +118,19 @@ async def get_entity(client, entity):
                 except (PeerIdInvalid, ChannelInvalid):
                     continue
     return entity, client
+
+# Define the /start command handler
+async def start(update: Update, context: CallbackContext):
+    await update.message.reply_text("Hello, I'm your bot!")
+
+# Create the Application instance using the token (v20.x+ API)
+application = Application.builder().token(TOKEN).build()
+
+# Add handlers
+application.add_handler(CommandHandler("start", start))
+
+# Run the bot
+application.run_polling()
 
 # Add your initialization code and modules below
 from scenario.modules.helper_funcs.handlers import (
