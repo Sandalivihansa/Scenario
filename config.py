@@ -77,7 +77,7 @@ DONATION_LINK = os.environ.get("https://t.me/i_14344")
 WALL_API = os.environ.get("WALL_API", None) 
 
 To remove background of images # From:- https://www.remove.bg/
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "qV26c84dUAhUuEb3sG9N9M9Q")
+REM_BG_API_KEY = os.environ.get("qV26c84dUAhUuEb3sG9N9M9Q", "qV26c84dUAhUuEb3sG9N9M9Q")
 
 ## More info written at right side from this line.
 
